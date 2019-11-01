@@ -1,9 +1,8 @@
 ﻿using System;
-using ProtoBusiness;
 
 namespace ProtoBusiness
 {
-    public class TemperatureConverter
+    public class TemperatureConverter : ITemperatureConverter
     {
         private byte DecimalDigit { get; } = 7;
 
