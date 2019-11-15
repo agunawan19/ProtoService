@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProtoEntity
 {
-    internal interface IPrice
+    public interface IPrice
     {
         decimal SubTotal { get; set; }
         decimal DiscountPercentage { get; set; }

@@ -27,9 +27,9 @@ namespace ProtoService
 
             return new TemperatureUnit()
             {
-                TemperatureValue = celcius,
-                UnitLongName = Unit.Celcius.ToString(),
-                UnitShortName = Unit.Celcius.ToString()[0].ToString()
+                Value = celcius,
+                UnitShortName = nameof(Unit.Celcius).Substring(0, 1),
+                Unit = Unit.Celcius
             };
         }
 

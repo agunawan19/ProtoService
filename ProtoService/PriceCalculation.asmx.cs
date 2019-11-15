@@ -27,7 +27,7 @@ namespace ProtoService
             decimal salesTaxAmount = priceCalculation.CalculateSalesTaxAmount(netPrice, salesTaxPercentage);
             decimal totalPrice = priceCalculation.CalculateTotalPrice(netPrice, salesTaxAmount, additonalFees);
 
-            return new Price()
+            return new Price
             {
                 SubTotal = price,
                 DiscountPercentage = discountPercentage,

@@ -4,16 +4,17 @@ using System.Text;
 
 namespace ProtoEntity
 {
+    [Serializable]
     public enum Unit
     {
         Celcius,
         Fahrenheit
     }
 
-    public class TemperatureUnit : ITemperatureUnit
+    public class TemperatureUnit : IUnit
     {
-        public double TemperatureValue { get; set; }
-        public string UnitLongName { get; set; }
+        public double Value { get; set; }
         public string UnitShortName { get; set; }
+        public Unit Unit { get; set; }
     }
 }
