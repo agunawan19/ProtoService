@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ProtoBusiness\ProtoBusiness.csproj">
+      <Project>{923FF9CD-3608-4CD5-B867-DF62B64A55FB}</Project>
+      <Name>ProtoBusiness</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProtoService\ProtoService.csproj">
       <Project>{635F64C8-4840-423B-9D43-6E813A4BFFAA}</Project>
       <Name>ProtoService</Name>
